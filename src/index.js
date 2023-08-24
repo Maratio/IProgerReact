@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import * as ReactDOMClient from "react-dom/client"
+import App from "./components/App"
+import "./css/main.css"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// ReactDOM.render(React.createElement("input",{
+//     placeholder: "Help text",
+//     onClick: () => console.log("Clicked"),
+//     onMouseEnter: () => console.log("Mouse Over") 
+// }), document.getElementById("app"))
+
+// ReactDOM.render(<input placeholder = "Help text"/>, document.getElementById("app"))
+
+// const inputclick = () => console.log("Clicked")
+// const mouseOver = () => console.log("Mouse Over")
+// const el = <input placeholder = "Help text" onClick={inputclick} onMouseEnter={mouseOver}/>
+// const app = document.getElementById("app")
+// ReactDOM.render(el, app )
+
+const app = document.getElementById("app")
+
+// ReactDOMClient.render(el, app )
+
+const dopApp = ReactDOMClient.createRoot(app)
+dopApp.render(<App/>)

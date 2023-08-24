@@ -32,3 +32,8 @@ src/App.test.js
 src/logo.svg
 src/reportWebVitals.js
 src/setupTests.js
+src/config.json
+src/img/i.webp
+package-lock.json
+package.json
+src/App.js
